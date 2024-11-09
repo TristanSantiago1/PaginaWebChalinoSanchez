@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">        
+    <link rel="stylesheet" href="../css/navegacion.css">   
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/ouija.css">
+    <script src="../js/ouija.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logo" class="logo">
+        <h1><a href="index.html">Don Chalino Sanchez</a> </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="exitos.html">Exitos músicales</a></li>
+            <li><a href="contacto.html">Contactar</a></li>
+        </ul>
+    </nav>
+
+
+    <div></div>
+
+    <div class="container">
+            <table class="ouija">
+                <tr class="upperRow">
+                    <td colspan="5"><input type="button" id="byes" onclick="clickbutton(this)" value="YES"></td>
+                    <td colspan="3"></td> 
+                    <td colspan="5"><input type="button" id="bno" onclick="clickbutton(this)" value="NO"></td>
+                </tr>
+
+                <tr class="letras">
+                    <td> <input type="button" id="ba" onclick="clickbutton(this)" value="A"></td>
+                    <td> <input type="button" id="bb" onclick="clickbutton(this)" value="B"></td>
+                    <td> <input type="button" id="bc" onclick="clickbutton(this)" value="C"></td>
+                    <td> <input type="button" id="bd" onclick="clickbutton(this)" value="D"></td>
+                    <td> <input type="button" id="be" onclick="clickbutton(this)" value="E"></td>
+                    <td> <input type="button" id="bf" onclick="clickbutton(this)" value="F"></td>
+                    <td> <input type="button" id="bg" onclick="clickbutton(this)" value="G"></td>
+                    <td> <input type="button" id="bh" onclick="clickbutton(this)" value="H"></td>
+                    <td> <input type="button" id="bi" onclick="clickbutton(this)" value="I"></td>
+                    <td> <input type="button" id="bj" onclick="clickbutton(this)" value="J"></td>                
+                    <td> <input type="button" id="bk" onclick="clickbutton(this)" value="K"></td>
+                    <td> <input type="button" id="bl" onclick="clickbutton(this)" value="L"></td>
+                    <td> <input type="button" id="bm" onclick="clickbutton(this)" value="M"></td>
+                </tr>
+
+                <tr class="letras">
+                    <td> <input type="button" id="bn" onclick="clickbutton(this)" value="N"></td>
+                    <td> <input type="button" id="bo" onclick="clickbutton(this)" value="O"></td>
+                    <td> <input type="button" id="bp" onclick="clickbutton(this)" value="P"></td>
+                    <td> <input type="button" id="bq" onclick="clickbutton(this)" value="Q"></td>
+                    <td> <input type="button" id="br" onclick="clickbutton(this)" value="R"></td>               
+                    <td> <input type="button" id="bs" onclick="clickbutton(this)" value="S"></td>
+                    <td> <input type="button" id="bt" onclick="clickbutton(this)" value="T"></td>
+                    <td> <input type="button" id="bu" onclick="clickbutton(this)" value="U"></td>
+                    <td> <input type="button" id="bv" onclick="clickbutton(this)" value="V"></td>
+                    <td> <input type="button" id="bw" onclick="clickbutton(this)" value="W"></td>                
+                    <td> <input type="button" id="bx" onclick="clickbutton(this)" value="X"></td>
+                    <td> <input type="button" id="by" onclick="clickbutton(this)" value="Y"></td>
+                    <td> <input type="button" id="bz" onclick="clickbutton(this)" value="Z"></td>
+                </tr>
+
+                <tr class="numeros">
+                    <td></td>
+                    <td></td>
+                    <td> <input type="button" id="b1" onclick="clickbutton(this)" value="1"></td>
+                    <td> <input type="button" id="b2" onclick="clickbutton(this)" value="2"></td>
+                    <td> <input type="button" id="b3" onclick="clickbutton(this)" value="3"></td>                
+                    
+                    <td> <input type="button" id="b4" onclick="clickbutton(this)" value="4"></td>
+                    <td> <input type="button" id="b5" onclick="clickbutton(this)" value="5"></td>
+                    <td> <input type="button" id="b6" onclick="clickbutton(this)" value="6"></td>                
+                    
+                    <td> <input type="button" id="b7" onclick="clickbutton(this)" value="7"></td>
+                    <td> <input type="button" id="b8" onclick="clickbutton(this)" value="8"></td>
+                    <td> <input type="button" id="b9" onclick="clickbutton(this)" value="9"></td>
+                  
+                    <td> <input type="button" id="b0" onclick="clickbutton(this)" value="0"></td>
+                    <td></td>
+                </tr>
+
+                <tr class="lowerRow">
+                    <td  colspan="13"> <input type="button" id="bbye" onclick="clickbutton(this)" value="GOOD BYE"></td>
+                </tr>
+
+            </table>
+
+
+            <div class="chat">
+                <textarea class="historial" id="historial" readonly></textarea>
+                <div class="mensaje-actual">
+                    <label class="mensaje" id="mensaje"></label>
+                    <button onclick="enviarMensaje()">Enviar</button>
+                </div>
+            </div>
+            
+
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Pagina web oficial de Chalino Sanchez. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

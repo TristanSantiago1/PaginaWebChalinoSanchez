@@ -1,0 +1,28 @@
+
+header {
+    display: flex;   
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Cursiva heavy';
+    font-size: xx-large;
+    text-align: left ;
+    width: 65%;
+    border-radius: 0 15px 15px 0; 
+    margin-top: 3rem;
+}
+header a{
+    color: #ffffff;
+}
+
+header .logo {
+    width: 110px;
+    height: auto;
+    margin: .4rem 1rem .4rem 0rem; 
+}
+header .cruz {
+    width: 80px;
+    height: inherit;
+    align-content: flex-end;
+    margin-right: 1rem;
+    margin-left: auto; 
+}

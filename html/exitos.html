@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css"> 
+    <link rel="stylesheet" href="../css/footer.css">      
+    <link rel="stylesheet" href="../css/navegacion.css">  
+    <link rel="stylesheet" href="../css/tarjetaMusica.css">
+    <script src="../js/letra.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logo" class="logo">
+        <h1><a href="index.html">Don Chalino Sanchez</a> </h1>
+    </header>   
+    <nav>
+        <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="exitos.html">Exitos músicales</a></li>
+            <li><a href="contacto.html">Contactar</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="pistas">
+
+            <audio id="audioPlayer" controls>
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/almaenamorada.jpg" alt="Imagen de la canción">
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Alma Enamorada</h3>
+                    <p class="description">Subraya la intensidad de sus sentimientos, mostrando que su amor no es superficial, sino que está arraigado en lo más profundo de su ser.</p>
+                    <p><strong>Genero:</strong> Corrido, Norteña, Regional Mexicana.</p>
+                    <p><strong>Año:</strong> 1992</p>
+                    <p><strong>Álbum:</strong> Ya después de muerto</p>
+                    <p><strong>Duración:</strong> 2:39</p>
+                </div>
+                <div class="card-action">
+                    <button class="play-button" id="alma"  onclick="playSong(this)">&#9658; Play</button>
+                </div>
+            </div>
+            
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/nievesdeenero.jpg" alt="Imagen de la canción">
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Nieves de enero</h3>
+                    <p class="description">Inspirado por una promesa hecha a la Virgen María durante las nevadas de enero, el protagonista espera con esperanza el día en que podrá unirse en matrimonio con su amada.</p>
+                    <p><strong>Genero:</strong> Pop, HiHop/Rap, Regional Mexicana.</p>
+                    <p><strong>Año:</strong> 1992</p>
+                    <p><strong>Álbum:</strong>Nieves de enero</p>
+                    <p><strong>Duración:</strong> 3:28</p>
+                </div>
+                <div class="card-action">
+                    <button class="play-button" id="nieves" onclick="playSong(this)">&#9658; Play</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/pavidonavido.jpg" alt="Imagen de la canción">
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Pavido Navido</h3>
+                    <p class="description">Aunque ha tenido varios intérpretes, la versión más famosa es la de Valentín Elizalde. El juego de palabras de “pávido návido” ha dado mucho de qué hablar, pues hay quienes dicen que esta expresión se utiliza para describir a alguien temeroso o asustadizo.</p>
+                    <p><strong>Genero:</strong>Regional Mexicana.</p>
+                    <p><strong>Año:</strong> 1992</p>
+                    <p><strong>Álbum:</strong>Recordando A Chalino</p>
+                    <p><strong>Duración:</strong> 3:04</p>
+                </div>
+                <div class="card-action">
+                    <button class="play-button" id="pavido" onclick="playSong(this)">&#9658; Play</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/los chismes.jpg" alt="Imagen de la canción">
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Los chismes</h3>
+                    <p class="description">Es una narrativa conmovedora que aborda el impacto de los chismes y el juicio social en las relaciones personales.</p>
+                    <p><strong>Genero:</strong>Regional Mexicana.</p>
+                    <p><strong>Año:</strong> 1992</p>
+                    <p><strong>Álbum:</strong> Ya después de muerto</p>
+                    <p><strong>Duración:</strong> 2:58</p>
+                </div>
+                <div class="card-action">
+                    <button class="play-button" id="chismes" onclick="playSong(this)">&#9658; Play</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="../img/ojitos.jpg" alt="Imagen de la canción">
+                </div>
+                <div class="card-content">
+                    <h3 class="title">Lindos Ojitos Azules</h3>
+                    <p class="description">La repetición de la imagen de los 'ojitos azules' refuerza la idea de un amor idealizado y la intensidad de la conexión emocional que el narrador siente, a pesar de que esa mirada ahora le sentencia a una 'pena de muerte', es decir, a un sufrimiento constante.</p>
+                    <p><strong>Genero:</strong> Corrido, Norteña, Regional Mexicana.</p>
+                    <p><strong>Año:</strong> 1992</p>
+                    <p><strong>Álbum:</strong> Ya después de muerto</p>
+                    <p><strong>Duración:</strong> 2:56</p>
+                </div>
+                <div class="card-action">
+                    <button class="play-button" id="ojitos" onclick="playSong(this)">&#9658; Play</button>
+                </div>
+            </div>
+
+        </div>
+
+        <aside class="letra">
+            <h3 class="tituloCancion" id="tituloCancion"></h3>
+            <p class="letraCancion" id="letraCancion"></p>
+        </aside>
+    </div>
+   
+
+    <footer>
+        <p>&copy; 2024 Pagina web oficial de Chalino Sanchez. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

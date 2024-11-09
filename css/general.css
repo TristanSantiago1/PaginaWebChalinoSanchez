@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        
+    background-color: #ffffff;    
+    line-height: 1.6;
+}
+
+@font-face {
+    font-family: 'Cursiva heavy';
+    src: url("../fonts/Thesignature.ttf");
+}
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+
+body {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: auto;
+    margin: auto;
+    padding: 2rem 5rem;
+    background-color: #0000000d;
+}
+
+.column {
+    flex: 1;
+    min-width: 30%;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.image-placeholder, .video-placeholder {
+    margin-top: 1.5rem;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+
+    
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 1rem;
+}
+
+.image-placeholder img{
+    max-width: 100%;
+    height: auto;
+}
+
+.video-placeholder {
+    height: auto;
+    padding-top: 56.25%; 
+    position: relative;
+}
+
+.video-placeholder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
